@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xyp.meyki_bear.behaviortest.MainActivity">
+
+    <com.xyp.meyki_bear.behaviortest.MyLayout
+        android:id="@+id/ml"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.xyp.meyki_bear.behaviortest.MyBarView
+            android:id="@+id/my_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ff00ff" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ffff00" />
+
+        <com.xyp.meyki_bear.behaviortest.PtrFrameLayoutone.PtreClassicFrameLayout
+            android:id="@+id/target_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff00">
+
+            </android.support.v7.widget.RecyclerView>
+        </com.xyp.meyki_bear.behaviortest.PtrFrameLayoutone.PtreClassicFrameLayout>
+    </com.xyp.meyki_bear.behaviortest.MyLayout>
+</RelativeLayout>
